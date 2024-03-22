@@ -1,0 +1,4 @@
+#!/bin/bash
+./FX00_Battery_Meter $* > stdout.txt &> stderr.txt
+cd /usr/gp2x
+./gp2xmenu

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FX00_Battery_Meter" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/FX00_Battery_Meter" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/FX00_Battery_Meter" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="GP2X Release">
+				<Option output="gp2x_bin/FX00_Battery_Meter" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="gp2x_bin" />
+				<Option object_output="obj/gp2x/" />
+				<Option type="1" />
+				<Option compiler="gnu_arm_gcc_compiler__open2x_sdk" />
+				<Option use_console_runner="0" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lSDL -lSDL_image -lSDL_ttf" />
+					<Add library="/opt/open2x/gcc-4.1.1-glibc-2.3.6/lib/libpng12.so" />
+					<Add library="/opt/open2x/gcc-4.1.1-glibc-2.3.6/lib/libfreetype.so" />
+					<Add library="/opt/open2x/gcc-4.1.1-glibc-2.3.6/lib/libjpeg.so" />
+					<Add library="/opt/open2x/gcc-4.1.1-glibc-2.3.6/lib/libz.so" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`sdl-config --cflags`" />
+		</Compiler>
+		<Linker>
+			<Add option="`sdl-config --libs` -lSDL_image -lSDL_ttf" />
+		</Linker>
+		<Unit filename="FX00_Battery_Meter.gpu" />
+		<Unit filename="GP2X_Joy_Conf.h" />
+		<Unit filename="battery.png" />
+		<Unit filename="body.png" />
+		<Unit filename="frame.png" />
+		<Unit filename="gen_functions.h" />
+		<Unit filename="icon.png" />
+		<Unit filename="libmono.ttf" />
+		<Unit filename="main.cpp" />
+		<Unit filename="sdl_functions.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

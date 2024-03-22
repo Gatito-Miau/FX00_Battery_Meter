@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1277878036 source:main.cpp
+	<iostream>
+	<fstream>
+	<fcntl.h>
+	<sys/ioctl.h>
+	<cstdlib>
+	<string.h>
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_ttf.h>
+	"sdl_functions.h"
+	"gen_functions.h"
+	"GP2X_Joy_Conf.h"
+
+1277878510 sdl_functions.h
+
+1277755202 gen_functions.h
+	<stdlib.h>
+	<string.h>
+	<iostream>
+	<fstream>
+	<limits.h>
+	<windows.h>
+	<unistd.h>
+
+1273069980 GP2X_Joy_Conf.h
+
